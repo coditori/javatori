@@ -1,0 +1,74 @@
+body{
+	margin:30px;
+	background-color:f3f3f3;
+}
+
+table {   
+	border-collapse:collapse;
+	border-bottom:1px solid gray;
+	border-style:none;
+	width:50%;
+}
+ 
+th {
+	border-bottom:1px solid gray;
+	text-align: left;
+}
+
+td,th {
+	padding: 5px 0;
+}
+
+tr {
+	padding: 10px 0;
+}
+ 
+#header {padding:0px 0px 15px 0px}
+#container #content {margin-top: 20px;}
+
+.add-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	padding: 5px 10px; 
+	
+	margin-bottom: 15px;
+	background: #cccccc;
+}
+
+.footerLink {padding:50px 0;display:block;}
+
+label {
+	font-size: 16px; 
+	width: 100px; 
+	display: block; 
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+input {
+	width: 250px;
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 16px;
+}
+
+.save {
+	font-weight: bold;
+	width: 130px; 
+	padding: 5px 10px; 
+	margin-top: 30px;
+	background: #cccccc;
+}
+
+.logout-form {
+	position: absolute;
+	right: 30;
+	top: 30;
+}
