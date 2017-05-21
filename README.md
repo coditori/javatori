@@ -1,12 +1,28 @@
 # Code Tutorials, Examples, and Best Practices.
-<br>
-
-| Sample        | Description           |
-| ------------- |:-------------:|
-|**Java Samples**|
-| [spring-boot,apache-cxf,hibernate,swagger-ui,maven](java/spring-boot,apache-cxf,hibernate,swagger-ui,maven) | Restfull Web Service with Spring-boot, Apache CXF, Hibernate, Swagger-UI |
-| [spring(mvc,data-jpa,security),hibernate,maven](java/spring(mvc,data-jpa,security),hibernate,maven)| Blog Sample with Spring Security, Spring Data JPA, Hibernate |
-| **Go/Golang Samples** |
-| [file-uploader-downloader,basic-authentication](golang/file-uploader-downloader,basic-authentication) | Simple Storage Service with Basic Authentication |
-
-
+These projects are usually the enterprise combination of exists technologies. The following sample applications are provided:
+<table>
+<thead>
+<tr>
+<th>Sample</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"><strong>Java</strong></td>
+</tr>
+<tr>
+<td><a href="/java/spring-boot,apache-cxf,hibernate,swagger-ui,maven">spring-boot,apache-cxf,hibernate,swagger-ui,maven</a></td>
+<td align="center">JAX-RS with Spring-boot, Apache CXF, Hibernate, Swagger-UI</td>
+</tr>
+<tr>
+<td><a href="/java/spring(mvc,data-jpa,security),hibernate,maven">spring(mvc,data-jpa,security),hibernate,maven</a></td>
+<td align="center">Blog Sample with Spring Security, Spring Data JPA, Hibernate</td>
+</tr>
+<tr>
+<td colspan="2"><strong>Go/Golang</strong></td>
+</tr>
+<tr>
+<td><a href="/golang/file-uploader-downloader,basic-authentication">file-uploader-downloader,basic-authentication</a></td>
+<td align="center">Simple Storage Service with Basic Authentication</td>
+</tr></tbody></table>
