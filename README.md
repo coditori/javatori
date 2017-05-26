@@ -17,7 +17,7 @@ These projects are usually the enterprise combination of exists technologies. Th
 </tr>
 <tr>
 <td><a href="/java/spring-dans">spring-dans</a></td>
-<td align="center">A common Spring module on Data Access and Service layers</td>
+<td align="center">A common Spring module for Data Access and Service layers</td>
 </tr>
 <tr>
 <td><a href="/java/spring-boot,apache-cxf,hibernate,swagger-ui,maven">spring-boot,apache-cxf,hibernate,swagger-ui,maven</a></td>
