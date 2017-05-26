@@ -12,6 +12,14 @@ These projects are usually the enterprise combination of exists technologies. Th
 <td colspan="2"><strong>Java</strong></td>
 </tr>
 <tr>
+<td><a href="/java/spring-boot-swagger-ui">spring-boot, swagger-ui</a></td>
+<td align="center">RESTful api with Spring Boot and Swagger UI</td>
+</tr>
+<tr>
+<td><a href="/java/spring-dans">spring-dans</a></td>
+<td align="center">A common Spring module on Data Access and Service layers</td>
+</tr>
+<tr>
 <td><a href="/java/spring-boot,apache-cxf,hibernate,swagger-ui,maven">spring-boot,apache-cxf,hibernate,swagger-ui,maven</a></td>
 <td align="center">JAX-RS with Spring-boot, Apache CXF, Hibernate, Swagger-UI</td>
 </tr>
