@@ -7,7 +7,7 @@
   </parent>
 
   <artifactId>restful-api</artifactId>
-  <groupId>com.massoudafrashteh.code.spring.boot.cxf.restful</groupId>
+  <groupId>com.massoudafrashteh.code.spring.boot.restful</groupId>
 
   <properties>
     <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
@@ -18,16 +18,16 @@
   </properties>
 
   <dependencies>
-  	<!-- spring dependencies -->
-	<dependency>
-       <groupId>com.massoudafrashteh.code.spring.dans</groupId>
-       <artifactId>spring-dans</artifactId>
-       <version>${spring-dans.version}</version>
-       </dependency>
+    <!-- spring dependencies -->
     <dependency>
-       <groupId>org.springframework.boot</groupId>
-       <artifactId>spring-boot-starter-web</artifactId>
-       <version>${spring-boot.version}</version>
+      <groupId>com.massoudafrashteh.code.spring.dans</groupId>
+      <artifactId>spring-dans</artifactId>
+      <version>${spring-dans.version}</version>
+      </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>${spring-boot.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
