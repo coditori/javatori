@@ -1,4 +1,4 @@
-package com.massoudafrashteh.code.spring.boot.cxf.restful.controller;
+package com.massoudafrashteh.code.spring.boot.restful.controller;
 
 import java.util.List;
 

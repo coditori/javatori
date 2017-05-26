@@ -23,7 +23,7 @@ public class Config {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.apis(RequestHandlerSelectors
-						.basePackage("com.massoudafrashteh.code.spring.boot.cxf.restful.controller"))
+						.basePackage("com.massoudafrashteh.code.spring.boot.restful.controller"))
 				.paths(PathSelectors.any())
 				.build();
 	}

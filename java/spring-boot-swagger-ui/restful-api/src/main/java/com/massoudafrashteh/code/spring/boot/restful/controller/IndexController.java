@@ -1,4 +1,4 @@
-package com.massoudafrashteh.code.spring.boot.cxf.restful.controller;
+package com.massoudafrashteh.code.spring.boot.restful.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
