@@ -1,5 +1,5 @@
 # Code Tutorials, Examples, and Best Practices.
-These projects are usually the enterprise combination of exists technologies. The following sample applications are provided:
+These projects usually are the Enterprise combination of existing technologies. The following sample applications are provided:
 <table>
 <thead>
 <tr>
