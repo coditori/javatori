@@ -18,7 +18,7 @@ These projects are usually the enterprise combination of exists technologies. Th
 <td align="center">If you have "both" JAX-RS and JAX-WS use CXF, use Jersey if just have JAX-RS</td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-restful">Spring Boot RUSTful API</a></td>
+<td><a href="/java/spring-boot-restful">Spring Boot RESTful API</a></td>
 <td align="center">RESTful api with Spring Boot and Swagger UI</td>
 <td align="center">If you don't care about JAX-RS standards use Spring Rest</td>
 </tr>

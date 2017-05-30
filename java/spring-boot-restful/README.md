@@ -15,4 +15,4 @@ Now run Spring Boot which is located in [Application Class](https://github.com/m
 **Checking api:** open http://localhost:8080/ping (or send a GET request) then you should get **pong** in the response.
 <br>**Swagger UI:** open http://localhost:8080/swagger-ui.html to see the Spring Boot RESTful API Documentation page.
 
-![Swagger UI main page](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-swagger-ui/doc/images/spring-boot-swagger-ui.png?raw=true)
+![Swagger UI main page](https://raw.githubusercontent.com/massoudAfrashteh/code-examples/master/java/spring-boot-restful/doc/images/spring-boot-swagger-ui.png)
