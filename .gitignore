@@ -49,7 +49,6 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-*.properties
 
 # ---> Go
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
