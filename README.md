@@ -15,12 +15,12 @@ These projects usually are the Enterprise combination of existing technologies. 
 <tr>
 <td><a href="/java/spring-boot-cxf">Apache CXF with Spring Boot JAX-RS API</a></td>
 <td align="center">JAX-RS API with Spring Boot, Apache CXF, and Swagger-UI</td>
-<td align="center">If you have "both" JAX-RS and JAX-WS use CXF, use Jersey if just have JAX-RS</td>
+<td align="center">If have "both" JAX-RS and JAX-WS use CXF, use Jersey if just need JAX-RS</td>
 </tr>
 <tr>
 <td><a href="/java/spring-boot-restful">Spring Boot RESTful API</a></td>
 <td align="center">RESTful API with Spring Boot and Swagger UI</td>
-<td align="center">If you don't care about JAX-RS standards use Spring Rest</td>
+<td align="center">If don't care about JAX-RS standards use Spring Rest</td>
 </tr>
 <tr>
 <td><a href="/java/spring-dans">Spring Dans</a></td>
