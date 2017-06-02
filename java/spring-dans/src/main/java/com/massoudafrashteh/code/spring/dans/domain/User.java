@@ -22,19 +22,23 @@ public class User implements Serializable {
 	public User() {
 	}
 
+	public User(final Long id, final String firstName) {
+		this.id = id;
+		this.firstName = firstName;
+	}
+
 	public User(final String name) {
-		super();
 		this.firstName = name;
 	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(final long id) {
+	public void setId(final Long id) {
 		this.id = id;
 	}
 

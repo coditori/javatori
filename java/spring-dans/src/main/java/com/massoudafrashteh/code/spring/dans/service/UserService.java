@@ -11,8 +11,9 @@ public interface UserService {
 	 * 
 	 * @param user
 	 *            should be a new <code>User</code>
+	 * @return User
 	 */
-	public void save(User user);
+	public User save(User user);
 
 	/**
 	 * Finds and returns <code>User</code> based on passed user <code>id</code>
@@ -36,8 +37,9 @@ public interface UserService {
 	 * 
 	 * @param user
 	 *            should be a exist <code>User</code>
+	 * @return User
 	 */
-	public void update(User user);
+	public User update(User user);
 
 	/**
 	 * Deletes a specific <code>User</code> based on passed user <code>id</code>
