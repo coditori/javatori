@@ -24,7 +24,8 @@ These projects usually are the Enterprise combination of existing technologies. 
 </tr>
 <tr>
 <td><a href="/java/spring-dans">Spring Dans</a></td>
-<td align="center">A common Spring module contains Data Access and Service layers</td>
+<td align="center">A common Spring module contains Data Access and Service layers that tested with JUnit, Mockito, and Hamcrest</td>
+<td align="center">A mandatory part of any spring enterprise project which working with Database</td>
 </tr>
 <tr>
 <td><a href="/java/spring(mvc,data-jpa,security),hibernate,maven">spring(mvc,data-jpa,security),hibernate,maven</a></td>
