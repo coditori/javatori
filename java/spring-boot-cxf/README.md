@@ -1,18 +1,16 @@
-# Spring Boot RESTful API with Swagger UI
+# Spring Boot integration with Apache CXF under JAX-RS and Swagger UI
 
 It's better to keep all layers seperated form each other. This is a multi-module Maven project that seperated Data Access and Service Layers from Web Layer. You just need to add your Database dependencies and configurations to Web Layer and put your Repository and Business Logic methods in [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans). 
 
-In this example I just used HSQLDB which is an Embedded In-Memory Database and Spring Boot will configure it, but you can use any Database that you need.
+In this example I just used MySQL Database and Spring Boot will configure it via application.properties, but you can use any Database that you need.
 
 #### How to use
 Just import project then your IDE will automatically import dependencies like [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans).
 
-
-
 #### How to run
-Now run Spring Boot which is located in [Application Class](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-swagger-ui/restful-api/src/main/java/starter/Application.java) and then open below links:
+Now run Spring Boot which is located in [Application Class](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-cxf/restful/src/main/java/starter/Starter.java) and then open below links:
 
-**Checking api:** open http://localhost:8080/ping (or send a GET request) then you should get **pong** in the response.
-<br>**Swagger UI:** open http://localhost:8080/swagger-ui.html to see the Spring Boot RESTful API Documentation page.
+**Checking api:** open http://localhost:8080/services/ping (or send a GET request) then you should get **pong** in the response.
+<br>**Swagger UI:** open http://localhost:8080/services/services to see the Spring Boot RESTful API Documentation link.
 
-![Swagger UI main page](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-swagger-ui/doc/images/spring-boot-swagger-ui.png?raw=true)
+![Swagger UI main page](https://raw.githubusercontent.com/massoudAfrashteh/code-examples/master/java/spring-boot-cxf/doc/images/spring-boot-cxf-swagger-ui.png)
