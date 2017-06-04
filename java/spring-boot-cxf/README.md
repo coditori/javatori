@@ -1,6 +1,6 @@
 # Spring Boot integration with Apache CXF under JAX-RS and Swagger UI
 
-It's better to keep all layers seperated form each other. This is a multi-module Maven project that seperated Data Access and Service Layers from Web Layer. You just need to add your Database dependencies and configurations to Web Layer and put your Repository and Business Logic methods in [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans). 
+It's better to keep all layers separated form each other. This is a multi-module Maven project that seperated Data Access and Service Layers from Web Layer. You just need to add your Database dependencies and configurations to Web Layer and put your Repository and Business Logic methods in [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans). 
 
 In this example I just used MySQL Database and Spring Boot will configure it via application.properties, but you can use any Database that you need.
 

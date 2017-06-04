@@ -1,6 +1,6 @@
 # Spring DANS (Data Access and Service Layer)
 
-It's better to keep all layers seperated form each other, in my case I put Business Logic (Service) Layer and Data Access Layer both in a Maven Module and used in other examples.
+It's better to keep all layers separated form each other, in my case I put Business Logic (Service) Layer and Data Access Layer both in a Maven Module and used in other examples.
 
 There is no dependency for Database here because we don't need Database even for Tests we can use Mockito. Just add Database dependencies and configurations to Web Layer. E.g [spring-boot, swagger-ui](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-swagger-ui) is a Web multi-module project that used spring-dans.
 
