@@ -20,7 +20,7 @@ This project will not compile alone! why? because this is a needs dans module in
 Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-restful#how-to-use).
 
 #### How to use
-After clone the repository just import project then your IDE will automatically import dependencies like [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans).
+After clone the repository just import this project then your IDE will automatically import dependencies like [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans).
 
 #### How to run
 Now run Spring Boot which is located in [Application Class](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-restful/restful/src/main/java/starter/Starter.java) and then open below links:
