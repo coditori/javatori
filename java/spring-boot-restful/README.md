@@ -8,7 +8,7 @@ In this example I just used MySQL Database and Spring Boot will configure it via
 I prefer JAX-RS with an integration of spring-boot for more information see the [when to use column](https://github.com/massoudAfrashteh/code-examples)
 
 #### Compilation
-This project will not compile alone! why? because this is a needs dans module inside it's POM file.
+This project will not compile alone! why? because  needs "spring-dans" module inside it's POM file.
 <pre> 
 &lt;dependency&gt;
   &lt;groupId&gt;com.massoudafrashteh.code.spring.dans&lt;/groupId&gt;

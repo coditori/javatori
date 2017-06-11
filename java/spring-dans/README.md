@@ -5,7 +5,7 @@ It's better to keep all layers separated form each other, in my case I put Busin
 There is no dependency for Database here because we don't need Database even for Tests we can use Mockito. Just add Database dependencies and configurations to Web Layer. E.g [spring-boot, swagger-ui](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-swagger-ui) is a Web multi-module project that used spring-dans.
 
 #### Compilation
-This project will not compile alone! why? because this is a module and needs a main module "com.massoudafrashteh.code.spring" inside it's POM file. 
+This project will not compile alone! why? because needs a main module "com.massoudafrashteh.code.spring" inside it's POM file. 
 <pre>
   &lt;parent&gt;
     &lt;groupId&gt;com.massoudafrashteh.code.spring&lt;/groupId&gt;

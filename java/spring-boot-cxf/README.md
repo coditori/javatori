@@ -5,7 +5,7 @@ It's better to keep all layers separated form each other. This is a multi-module
 In this example I just used MySQL Database and Spring Boot will configure it via application.properties, but you can use any Database that you need.
 
 #### Compilation
-This project will not compile alone! why? because this is a needs dans module inside it's POM file.
+This project will not compile alone! why? because  needs "spring-dans" module inside it's POM file.
 <pre> 
 &lt;dependency&gt;
   &lt;groupId&gt;com.massoudafrashteh.code.spring.dans&lt;/groupId&gt;
