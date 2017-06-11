@@ -14,7 +14,7 @@ This project will not compile alone! why? because this is a needs dans module in
 &lt;/dependency&gt;
 </pre>
 
-Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-restful#how-to-use).
+Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-cxf#how-to-use).
 
 #### How to use
 Just import project then your IDE will automatically import dependencies like [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans).
