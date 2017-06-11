@@ -17,4 +17,4 @@ This project will not compile alone! why? because this is a module and needs a m
 Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-dans#how-to-use).
 
 #### How to use
-I Created a symlink to spring-dans module in any multi-module project that I needed dans. After clone the repository just import [spring-boot-cxf](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-cxf) or [spring-boot-restful](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-restful) insideyour IDE then it will automatically import dans, That's it!
+I created a symlink to spring-dans module in any multi-module project that I needed dans. After clone the repository just import [spring-boot-cxf](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-cxf) or [spring-boot-restful](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-restful) inside your IDE then it will automatically import dans, That's it!
