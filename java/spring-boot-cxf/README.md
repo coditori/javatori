@@ -6,7 +6,7 @@ In this example I just used MySQL Database and Spring Boot will configure it via
 
 #### Compilation
 This project will not compile alone! why? because this is a needs dans module inside it's POM file.
-'''xml    
+'''
 <!-- spring dependencies -->
 <dependency>
   <groupId>com.massoudafrashteh.code.spring.dans</groupId>

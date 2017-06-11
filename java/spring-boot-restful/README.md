@@ -9,7 +9,7 @@ I prefer JAX-RS with an integration of spring-boot for more information see the 
 
 #### Compilation
 This project will not compile alone! why? because this is a needs dans module inside it's POM file.
-'''xml    
+'''    
 <!-- spring dependencies -->
 <dependency>
   <groupId>com.massoudafrashteh.code.spring.dans</groupId>

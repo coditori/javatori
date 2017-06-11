@@ -6,8 +6,7 @@ There is no dependency for Database here because we don't need Database even for
 
 #### Compilation
 This project will not compile alone! why? because this is a module and needs a main module "com.massoudafrashteh.code.spring" inside it's POM file. 
-
-'''xml
+'''
 <parent>
   <groupId>com.massoudafrashteh.code.spring</groupId>
   <artifactId>spring-root</artifactId>
