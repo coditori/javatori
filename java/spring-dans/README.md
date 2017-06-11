@@ -7,11 +7,11 @@ There is no dependency for Database here because we don't need Database even for
 #### Compilation
 This project will not compile alone! why? because this is a module and needs a main module "com.massoudafrashteh.code.spring" inside it's POM file. 
 <pre>
-  <parent>
-    <groupId>com.massoudafrashteh.code.spring</groupId>
-    <artifactId>spring-root</artifactId>
-    <version>0.0.1</version>
-  </parent>
+  &lt;parent&gt;
+    &lt;groupId&gt;com.massoudafrashteh.code.spring&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-root&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1&lt;/version&gt;
+  &lt;/parent&gt;
 </pre>
 
 Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-dans#how-to-use).
