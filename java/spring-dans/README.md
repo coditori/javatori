@@ -4,5 +4,18 @@ It's better to keep all layers separated form each other, in my case I put Busin
 
 There is no dependency for Database here because we don't need Database even for Tests we can use Mockito. Just add Database dependencies and configurations to Web Layer. E.g [spring-boot, swagger-ui](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-swagger-ui) is a Web multi-module project that used spring-dans.
 
-**How to use**
-I Created a symlink to spring-dans module in any multi-module project that I needed dans. That means when you import a project like [spring-boot, swagger-ui](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-swagger-ui) in your JEE IDE it will automatically import dans, That's it!
+#### Compilation
+This project will not compile alone! why? because this is a module and needs a main module "com.massoudafrashteh.code.spring" inside it's POM file. 
+
+'''xml
+<parent>
+  <groupId>com.massoudafrashteh.code.spring</groupId>
+  <artifactId>spring-root</artifactId>
+  <version>0.0.1</version>
+</parent>
+'''
+
+Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-dans#how-to-use).
+
+#### How to use
+I Created a symlink to spring-dans module in any multi-module project that I needed dans. After clone the repository just import [spring-boot-cxf](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-cxf) or [spring-boot-restful](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-restful) insideyour IDE then it will automatically import dans, That's it!

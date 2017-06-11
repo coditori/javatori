@@ -7,8 +7,21 @@ In this example I just used MySQL Database and Spring Boot will configure it via
 #### Spring Rest or JAX-RS?
 I prefer JAX-RS with an integration of spring-boot for more information see the [when to use column](https://github.com/massoudAfrashteh/code-examples)
 
+#### Compilation
+This project will not compile alone! why? because this is a needs dans module inside it's POM file.
+'''xml    
+<!-- spring dependencies -->
+<dependency>
+  <groupId>com.massoudafrashteh.code.spring.dans</groupId>
+  <artifactId>spring-dans</artifactId>
+  <version>${spring-dans.version}</version>
+</dependency>
+'''
+
+Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-cxf#how-to-use).
+
 #### How to use
-Just import project then your IDE will automatically import dependencies like [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans).
+After clone the repository just import project then your IDE will automatically import dependencies like [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans).
 
 #### How to run
 Now run Spring Boot which is located in [Application Class](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-boot-restful/restful/src/main/java/starter/Starter.java) and then open below links:

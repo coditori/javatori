@@ -4,6 +4,19 @@ It's better to keep all layers separated form each other. This is a multi-module
 
 In this example I just used MySQL Database and Spring Boot will configure it via application.properties, but you can use any Database that you need.
 
+#### Compilation
+This project will not compile alone! why? because this is a needs dans module inside it's POM file.
+'''xml    
+<!-- spring dependencies -->
+<dependency>
+  <groupId>com.massoudafrashteh.code.spring.dans</groupId>
+  <artifactId>spring-dans</artifactId>
+  <version>${spring-dans.version}</version>
+</dependency>
+'''
+
+Now you know about the hierarchy and just read next part [how to use](https://github.com/massoudAfrashteh/code-examples/tree/master/java/spring-boot-restful#how-to-use).
+
 #### How to use
 Just import project then your IDE will automatically import dependencies like [spring-dans](https://github.com/massoudAfrashteh/code-examples/blob/master/java/spring-dans).
 
