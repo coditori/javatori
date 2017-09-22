@@ -13,7 +13,7 @@ These projects usually are the Enterprise combination of existing technologies. 
 <td colspan="3"><strong>Java</strong></td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-cxf">Apache CXF with Spring Boot JAX-RS API</a></td>
+<td><a href="/java/spring-boot-cxf">Spring Boot, Apache CXF, JAX-RS API</a></td>
 <td align="center">JAX-RS API with Spring Boot, Apache CXF, and Swagger-UI</td>
 <td align="center">If have "both" JAX-RS and JAX-WS use CXF, use Jersey if just need JAX-RS</td>
 </tr>
@@ -28,13 +28,13 @@ These projects usually are the Enterprise combination of existing technologies. 
 <td align="center">Mandatory part of any Spring enterprise project which working with Database</td>
 </tr>
 <tr>
-<td><a href="/java/spring(mvc,data-jpa,security),hibernate,maven">spring(mvc,data-jpa,security),hibernate,maven</a></td>
-<td align="center">Blog Sample with Spring Security, Spring Data JPA, Hibernate</td>
+<td><a href="/java/hibernate">Hibernate</a></td>
+<td align="center">A bare Hibernate project with Java/XML config</td>
 </tr>
 <tr>
 <td colspan="3"><strong>Go/Golang</strong></td>
 </tr>
 <tr>
-<td><a href="/golang/file-uploader-downloader,basic-authentication">file-uploader-downloader,basic-authentication</a></td>
+<td><a href="/golang/file-uploader-downloader,basic-authentication">Simple Storage Service (S3)</a></td>
 <td align="center">Simple Storage Service with Basic Authentication</td>
 </tr></tbody></table>
