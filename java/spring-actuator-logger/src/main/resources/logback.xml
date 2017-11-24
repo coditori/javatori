@@ -1,0 +1,26 @@
+<configuration>
+
+    <appender name="application-appender" class="ch.qos.logback.core.FileAppender">
+        <file>application.log</file>
+
+        <encoder>
+            <pattern>%date %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="http-appender" class="ch.qos.logback.core.FileAppender">
+        <file>http.log</file>
+
+        <encoder>
+            <pattern>%date %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="application-logger" level="ALL" additivity="false">
+        <appender-ref ref="application-appender" />
+    </logger>
+
+    <logger name="http-logger" level="ALL" additivity="false">
+        <appender-ref ref="http-appender" />
+    </logger>
+</configuration>
