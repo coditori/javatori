@@ -19,12 +19,12 @@ These projects usually are the Enterprise combination of existing technologies. 
 </tr>
 <tr>
 <td><a href="/java/spring-maven-modules/spring-boot-cxf">Spring Boot, Apache CXF, JAX-RS API</a></td>
-<td align="center">JAX-RS API with Spring Boot, Apache CXF, and Swagger-UI</td>
+<td align="center">Maven Multi Module JAX-RS API with Spring Boot, Apache CXF, and Swagger-UI</td>
 <td align="center">If have "both" JAX-RS and JAX-WS use CXF, use Jersey or Spring RESTful either</td>
 </tr>
 <tr>
 <td><a href="/java/spring-maven-modules/spring-boot-restful">Spring Boot RESTful API</a></td>
-<td align="center">RESTful API with Spring Boot and Swagger UI</td>
+<td align="center">Maven Multi Module RESTful API with Spring Boot and Swagger UI</td>
 <td align="center">If don't care about JAX-RS standards use Spring Restful</td>
 </tr>
 <tr>
