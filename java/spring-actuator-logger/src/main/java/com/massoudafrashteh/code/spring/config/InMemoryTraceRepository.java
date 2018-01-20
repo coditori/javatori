@@ -16,7 +16,7 @@ import java.util.*;
  * @author Massoud Afrashteh
  */
 @Component
-public class MyInMemoryTraceRepository implements TraceRepository {
+public class InMemoryTraceRepository implements TraceRepository {
 
     private static final Logger HTTP_LOGGER = LoggerFactory.getLogger("http-logger");
 
