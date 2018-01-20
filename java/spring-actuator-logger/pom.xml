@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.massoudafrashteh.code</groupId>
-    <artifactId>logger</artifactId>
+    <artifactId>spring-actuator-logger</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>

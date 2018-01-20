@@ -18,7 +18,6 @@ import java.util.*;
 @Component
 public class MyInMemoryTraceRepository implements TraceRepository {
 
-    private static final Logger APPLICATION_LOGGER = LoggerFactory.getLogger("application-logger");
     private static final Logger HTTP_LOGGER = LoggerFactory.getLogger("http-logger");
 
     // For security matters it's better to not expose Traces on HTTP
@@ -30,13 +29,7 @@ public class MyInMemoryTraceRepository implements TraceRepository {
     @Override
     public void add(Map<String, Object> map) {
         Trace trace = new Trace(new Date(), map);
-        ObjectMapper objectMapper = new ObjectMapper();
-        String jsonToString = null;
-        try {
-            jsonToString = objectMapper.writeValueAsString(trace);
-        } catch (JsonProcessingException e) {
-            APPLICATION_LOGGER.error(e.getMessage());
-        }
-        HTTP_LOGGER.info(jsonToString);
+        String traceInfo = trace.getInfo().toString();
+        HTTP_LOGGER.info(traceInfo);
     }
 }
