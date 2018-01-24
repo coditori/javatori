@@ -13,19 +13,24 @@ These projects usually are the Enterprise combination of existing technologies. 
 <td colspan="3"><strong>Java</strong></td>
 </tr>
 <tr>
-<td><a href="/java/spring-actuator-logger">Spring Boot, Spring Actuator</a></td>
+<td><a href="/java/spring-boot-actuator-logger">Spring Boot, Spring Actuator</a></td>
 <td align="center">Production Ready Actuator Logs</td>
 <td align="center">If need Log files rather than Actuator Endpoints according to Security concerns, Can be used alongside Syslog and Elasticsearch</td>
 </tr>
 <tr>
-<td><a href="/java/spring-maven-modules/spring-boot-cxf">Spring Boot, Apache CXF, JAX-RS API</a></td>
-<td align="center">Maven Multi Module JAX-RS API with Spring Boot, Apache CXF, and Swagger-UI</td>
+<td><a href="/java/spring-boot-cxf">Spring Boot, Apache CXF, JAX-RS API</a></td>
+<td align="center">JAX-RS API with Spring Boot, Apache CXF, and Swagger-UI</td>
 <td align="center">If have "both" JAX-RS and JAX-WS use CXF, use Jersey or Spring RESTful either</td>
 </tr>
 <tr>
-<td><a href="/java/spring-maven-modules/spring-boot-restful">Spring Boot RESTful API</a></td>
-<td align="center">Maven Multi Module RESTful API with Spring Boot and Swagger UI</td>
+<td><a href="/java/spring-boot-restful">Spring Boot RESTful API</a></td>
+<td align="center">RESTful API with Spring Boot and Swagger UI</td>
 <td align="center">If don't care about JAX-RS standards use Spring Restful</td>
+</tr>
+<tr>
+<td><a href="/java/spring-boot-maven-modules/spring-boot-restful">Spring Boot RESTful API</a></td>
+<td align="center">Maven Multi Module RESTful API with Spring Boot and Swagger UI</td>
+<td align="center">Mdular application is an old approach take a look at Microservices</td>
 </tr>
 <tr>
 <td><a href="/java/hibernate">Hibernate</a></td>
