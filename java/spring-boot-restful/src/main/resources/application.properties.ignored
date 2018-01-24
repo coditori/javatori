@@ -1,0 +1,11 @@
+# Datasource
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/spring_boot_restful?createDatabaseIfNotExist=true
+# Never use root user in production
+spring.datasource.username=username
+spring.datasource.password=password
+# Hibernate
+# Change "create" after first run to "update", will drop your tables every time otherwise
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect

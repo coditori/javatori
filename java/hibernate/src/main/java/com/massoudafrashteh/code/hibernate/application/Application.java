@@ -19,34 +19,14 @@ public class Application {
         Session s = HibernateConfig.getSession();
         Transaction tx= s.getTransaction();
 
-
-// Create a customer entity
         Map<String, String> david = new HashMap<>();
         david.put( "name","David" );
 
-// Create an organization entity
-//        Map<String, String>foobar = new HashMap<>();
-//        foobar.put( "name","Foobar Inc." );
-
-// Link both
-//        david.put( "organization", foobar.toString() );
-
-// Save both
         tx.begin();
+
         s.save( "Customer",david );
-//        s.save( "Organization",foobar );
 
         tx.commit();
         s.close();
-
-//        User user = new User();
-//        user.setName("Massoud");
-//
-//        tx.begin();
-//        session.save(user);
-//        tx.commit();
-//
-//        session.close();
-//        System.out.println("Data is saved :)");
     }
 }
