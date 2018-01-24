@@ -98,4 +98,3 @@ hs_err_pid*
 
 # spring & hibernate
 *.properties
-hibernate.properties
