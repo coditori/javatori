@@ -30,11 +30,11 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- MySQL Database Connector -->
+        <!-- Database dependencies -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-driver.version}</version>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.196</version>
         </dependency>
 
         <!-- Apache CXF dependencies -->
@@ -56,14 +56,14 @@
             <version>${jackson.version}</version>
         </dependency>
 
-
+        <!-- Swagger dependencies -->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>swagger-ui</artifactId>
             <version>${swagger-ui.version}</version>
         </dependency>
 
-        <!-- unit testing dependencies -->
+        <!-- Unit testing dependencies -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

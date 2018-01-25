@@ -1,11 +1,25 @@
-# Datasource
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/spring_boot_cxf?createDatabaseIfNotExist=true
-# Never use root user in production
-spring.datasource.username=USERNAME
-spring.datasource.password=PASSWORD
-# Hibernate
-# Change "create" after first run to "update", will drop your tables every time otherwise
-spring.jpa.hibernate.ddl-auto=create
+###
+#   Database Settings
+###
+spring.datasource.url=jdbc:h2:mem:spring-boot-cxf;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.platform=h2
+spring.datasource.username = sa
+spring.datasource.password =
+spring.datasource.driverClassName = org.h2.Driver
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+###
+#   H2 Settings
+###
+spring.h2.console.enabled=true
+spring.h2.console.path=/console
+spring.h2.console.settings.trace=false
+spring.h2.console.settings.web-allow-others=false
+
+###
+#   Hibernate Settings
+###
+spring.jpa.hibernate.ddl-auto = create
 spring.jpa.properties.hibernate.show_sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+spring.jpa.properties.hibernate.use_sql_comments=false
+spring.jpa.properties.hibernate.format_sql=false
