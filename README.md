@@ -13,18 +13,18 @@ These projects usually are the Enterprise combination of existing technologies. 
 <td colspan="3"><strong>Java</strong></td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-actuator-logger">Spring Boot, Spring Actuator</a></td>
+<td><a href="/java/spring-boot-actuator-logger">Spring Boot Actuator</a></td>
 <td align="center">Production Ready Actuator Logs</td>
 <td align="center">If need Log files rather than Actuator Endpoints according to Security concerns, Can be used alongside Syslog and Elasticsearch</td>
 </tr>
 <tr>
 <td><a href="/java/spring-boot-cxf">Boot, CXF, JAX-RS API</a></td>
-<td align="center">JAX-RS API with Spring Boot, Apache CXF, H2, and Swagger-UI</td>
+<td align="center">Spring Boot, Apache CXF, H2, JAX_RS, and Swagger-UI</td>
 <td align="center">CXF is good for "both" JAX-RS and JAX-WS</td>
 </tr>
 <tr>
 <td><a href="/java/spring-boot-restful">Boot, RESTful API</a></td>
-<td align="center">RESTful API with Spring Boot, H2, and Swagger UI</td>
+<td align="center">Spring Boot, H2, RESTful, and Swagger UI</td>
 <td align="center">If don't care about JAX-RS standards use Spring RESTful</td>
 </tr>
 <tr>
@@ -35,6 +35,7 @@ These projects usually are the Enterprise combination of existing technologies. 
 <tr>
 <td><a href="/java/hibernate">Hibernate</a></td>
 <td align="center">A bare Hibernate project with Java/XML config</td>
+<td align="center">Use for just Data access layer (working on DB)</td>
 </tr>
 <tr>
 <td colspan="3"><strong>Go/Golang</strong></td>
