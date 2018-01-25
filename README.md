@@ -18,14 +18,14 @@ These projects usually are the Enterprise combination of existing technologies. 
 <td align="center">If need Log files rather than Actuator Endpoints according to Security concerns, Can be used alongside Syslog and Elasticsearch</td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-cxf">Spring Boot, Apache CXF, JAX-RS API</a></td>
-<td align="center">JAX-RS API with Spring Boot, Apache CXF, and Swagger-UI</td>
-<td align="center">If have "both" JAX-RS and JAX-WS use CXF, use Jersey or Spring RESTful either</td>
+<td><a href="/java/spring-boot-cxf">Boot, CXF, JAX-RS API</a></td>
+<td align="center">JAX-RS API with Spring Boot, Apache CXF, H2, and Swagger-UI</td>
+<td align="center">CXF is good for "both" JAX-RS and JAX-WS</td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-restful">Spring Boot RESTful API</a></td>
-<td align="center">RESTful API with Spring Boot and Swagger UI</td>
-<td align="center">If don't care about JAX-RS standards use Spring Restful</td>
+<td><a href="/java/spring-boot-restful">Boot, RESTful API</a></td>
+<td align="center">RESTful API with Spring Boot, H2, and Swagger UI</td>
+<td align="center">If don't care about JAX-RS standards use Spring RESTful</td>
 </tr>
 <tr>
 <td><a href="/java/spring-boot-maven-modules/spring-boot-restful">Spring Boot RESTful API</a></td>
