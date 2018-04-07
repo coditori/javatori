@@ -15,7 +15,7 @@
     <properties>
         <cxf.version>3.2.1</cxf.version>
         <swagger-ui.version>3.9.2</swagger-ui.version>
-        <mysql-driver.version>6.0.6</mysql-driver.version>
+        <h2.version>1.4.196</h2.version>
         <jackson.version>2.9.3</jackson.version>
     </properties>
 
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.196</version>
+            <version>${h2.version}</version>
         </dependency>
 
         <!-- Apache CXF dependencies -->
