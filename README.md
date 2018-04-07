@@ -16,11 +16,11 @@ These projects usually are a simple Enterprise combination of existing technolog
 <td align="center">If need Log files rather than Actuator Endpoints according to Security concerns, Can be used alongside Syslog and Elasticsearch</td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-cxf">Spring Boot, CXF, JAX-RS API</a></td>
+<td><a href="/java/spring-boot-cxf">Spring Boot, CXF JAX-RS API</a></td>
 <td align="center">CXF is good for "both" JAX-RS and JAX-WS</td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-restful">Spring Boot, RESTful API</a></td>
+<td><a href="/java/spring-boot-restful">Spring Boot RESTful API</a></td>
 <td align="center">If don't care about JAX-RS standards use Spring RESTful</td>
 </tr>
 <tr>
