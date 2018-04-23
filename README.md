@@ -12,19 +12,23 @@ These projects usually are a simple Enterprise combination of existing technolog
 <td colspan="2"><strong>Java</strong></td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-reactive-restful">Spring Boot Reactive RESTful Web Service</a></td>
-<td align="center">An enterprise API with Integration (End-To-End) Test</td>
+<td><a href="/java/spring-boot-reactive-restful-nosql-mongodb">Spring Boot, WebFlux, MongoDB, Swagger</a></td>
+<td align="center">WebFlux API with entire reactive process and Integration Test</td>
+</tr>
+<tr>
+<td><a href="/java/spring-boot-reactive-restful-rdbms">Spring Boot, WebFlux, H2, Swagger</a></td>
+<td align="center">WebFlux API with reactive web and service layer (not repository layer) and Integration (End-To-End) Test</td>
 </tr>
 <tr>
 <td><a href="/java/spring-boot-actuator-logger">Spring Boot Actuator</a></td>
 <td align="center">If need Log files rather than Actuator Endpoints according to Security concerns, Can be used alongside Syslog and Elasticsearch</td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-cxf">Spring Boot, CXF JAX-RS API</a></td>
+<td><a href="/java/spring-boot-cxf">Spring Boot, CXF JAX-RS API, Swagger</a></td>
 <td align="center">CXF is good for "both" JAX-RS and JAX-WS</td>
 </tr>
 <tr>
-<td><a href="/java/spring-boot-restful">Spring Boot RESTful API</a></td>
+<td><a href="/java/spring-boot-restful">Spring Boot RESTful API, Swagger</a></td>
 <td align="center">If don't care about JAX-RS standards use Spring RESTful</td>
 </tr>
 <tr>
@@ -33,7 +37,7 @@ These projects usually are a simple Enterprise combination of existing technolog
 </tr>
 <tr>
 <td><a href="/java/hibernate">Hibernate</a></td>
-<td align="center">A bare Hibernate layer to work on just Data access layer (working on DB)</td>
+<td align="center">A bare Hibernate layer to work on just Data Access Layer (working on DB)</td>
 </tr>
 <tr>
 <td colspan="2"><strong>Go/Golang</strong></td>
