@@ -98,7 +98,7 @@ public class CustomerControllerTest {
                 .expectBodyList(Customer.class).hasSize(1);
     }
 
-//    @Test
+    @Test
     public void test5_delete_customer_done() {
         webTestClient.delete().uri("/customers/{id}", id)
                 .exchange()
