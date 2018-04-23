@@ -12,6 +12,10 @@ These projects usually are a simple Enterprise combination of existing technolog
 <td colspan="2"><strong>Java</strong></td>
 </tr>
 <tr>
+<td><a href="/java/spring-boot-reactive-restful">Spring Boot Reactive RESTful Web Service</a></td>
+<td align="center">An enterprise API with Integration (End-To-End) Test</td>
+</tr>
+<tr>
 <td><a href="/java/spring-boot-actuator-logger">Spring Boot Actuator</a></td>
 <td align="center">If need Log files rather than Actuator Endpoints according to Security concerns, Can be used alongside Syslog and Elasticsearch</td>
 </tr>
