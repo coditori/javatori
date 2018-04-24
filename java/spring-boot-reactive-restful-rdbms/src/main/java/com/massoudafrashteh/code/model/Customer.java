@@ -1,6 +1,7 @@
 package com.massoudafrashteh.code.model;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
