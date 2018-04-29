@@ -8,6 +8,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import javax.transaction.Transactional;
+import java.util.NoSuchElementException;
 
 @Service
 @Transactional
@@ -23,7 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Mono<Customer> findById(Long id) {
-        return Mono.just(customerRepository.findById(id).get());
+        return Mono.just(customerRepository.findById(id).orElseThrow(NoSuchElementException::new));
     }
 
     @Override
