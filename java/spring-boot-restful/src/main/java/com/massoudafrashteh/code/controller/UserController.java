@@ -22,7 +22,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public User findById(@PathVariable("id") final Long id) {
-        return userService.findById(id).orElseThrow(NoSuchElementException::new);
+        return userService.findById(id);
     }
 
     @GetMapping

@@ -19,25 +19,25 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Override
-    public Optional<User> save(final User user) {
-        return Optional.of(userRepository.save(user));
+    public User save(final User user) {
+        return userRepository.save(user).orElseThrow(NoSuchElementException::new);
     }
 
     @Override
-    public Optional<User> findById(final long id) {
-        return Optional.of(userRepository.findOne(id));
+    public User findById(final long id) {
+        return userRepository.findById(id).orElseThrow(NoSuchElementException::new);
     }
 
     @Override
-    public Optional<List<User>> findAll() {
-        return Optional.of(userRepository.findAll());
+    public List<User> findAll() {
+        return Optional.of(userRepository.findAll()).orElseThrow(NoSuchElementException::new);
     }
 
     @Override
-    public Optional<User> update(final long id,
-                                 final User user) {
+    public User update(final long id,
+                       final User user) {
 
-        if (this.findById(id).isPresent()) {
+        if (userRepository.findById(id).isPresent()) {
             user.setId(id);
             return this.save(user);
         } else {
@@ -47,6 +47,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteById(final long id) {
-        userRepository.delete(id);
+        userRepository.deleteById(id);
     }
 }
