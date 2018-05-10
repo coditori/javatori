@@ -17,7 +17,7 @@ public class UserController {
 
     @PostMapping
     public User save(@RequestBody User user) {
-        return userService.save(user).orElseThrow(NoSuchElementException::new);
+        return userService.save(user);
     }
 
     @GetMapping("/{id}")
@@ -27,13 +27,12 @@ public class UserController {
 
     @GetMapping
     public List<User> findAll() {
-        return userService.findAll().orElseThrow(NoSuchElementException::new);
+        return userService.findAll();
     }
 
     @PutMapping("/{id}")
-    public User update(@PathVariable("id") Long id,
-                       @RequestBody User user) {
-        return userService.update(id, user).orElseThrow(NoSuchElementException::new);
+    public User update(@PathVariable("id") Long id, @RequestBody User user) {
+        return userService.update(id, user);
     }
 
     @DeleteMapping("/{id}")

@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User save(final User user) {
-        return userRepository.save(user).orElseThrow(NoSuchElementException::new);
+        return Optional.of(userRepository.save(user)).orElseThrow(NoSuchElementException::new);
     }
 
     @Override
@@ -34,8 +34,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User update(final long id,
-                       final User user) {
+    public User update(final long id, final User user) {
 
         if (userRepository.findById(id).isPresent()) {
             user.setId(id);
