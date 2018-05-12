@@ -43,7 +43,6 @@ public class UserIntegrationTest {
         ResponseEntity<User> user = restTemplate.postForEntity(ENDPOINT,
                 new HttpEntity<User>(newUser),
                 User.class);
-        System.out.println("newUser " + user);
         id = user.getBody().getId();
 
         assertThat(user.getStatusCode(),
@@ -65,7 +64,6 @@ public class UserIntegrationTest {
 
     @Test
     public void test2_find_game_success() {
-        System.out.println("id " + id);
         ResponseEntity<User> user = restTemplate.getForEntity(ENDPOINT + "/" + id,
                 User.class);
 
