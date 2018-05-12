@@ -16,9 +16,9 @@
     </parent>
 
     <properties>
-        <swagger.version>2.8.0</swagger.version>
         <h2.version>1.4.196</h2.version>
-        <mysql-driver.version>6.0.6</mysql-driver.version>
+        <swagger.version>2.8.0</swagger.version>
+        <lombok.version>1.16.20</lombok.version>
     </properties>
 
     <dependencies>
@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web-test</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -42,9 +42,9 @@
             <version>${h2.version}</version>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-driver.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
         <!-- swagger -->
         <dependency>
