@@ -19,12 +19,12 @@ public class Application {
         Session s = HibernateConfig.getSession();
         Transaction tx= s.getTransaction();
 
-        Map<String, String> david = new HashMap<>();
-        david.put( "name","David" );
+        User user = new User();
+        user.setName("Masoud");
 
         tx.begin();
 
-        s.save( "Customer",david );
+        s.save(user);
 
         tx.commit();
         s.close();
