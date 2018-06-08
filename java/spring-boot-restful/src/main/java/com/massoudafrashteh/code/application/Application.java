@@ -1,4 +1,4 @@
-package com.massoudafrashteh.code.starter;
+package com.massoudafrashteh.code.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages = "com")
 @EntityScan(basePackages = "com.massoudafrashteh.code.domain")
 @EnableJpaRepositories(basePackages = "com.massoudafrashteh.code.repository")
-public class Starter {
+public class Application {
     public static void main(final String[] args) {
-        SpringApplication.run(Starter.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }

@@ -1,4 +1,4 @@
-package com.massoudafrashteh.code.starter;
+package com.massoudafrashteh.code.application;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
