@@ -10,6 +10,7 @@ import (
 	"time"
 	"github.com/gorilla/mux"
 	"github.com/sethvargo/go-password/password"
+	// "gopkg.in/natefinch/lumberjack.v2"
 )
 
 var authPass,err = password.Generate(32, 10, 10, false, false)
@@ -21,6 +22,15 @@ const (
 )
 
 func main() {
+
+	// log.SetOutput(&lumberjack.Logger{
+	//     Filename:   "/var/log/myapp/foo.log",
+	//     MaxSize:    500, // megabytes
+	//     MaxBackups: 3,
+	//     MaxAge:     28, //days
+	//     Compress:   true, // disabled by default
+	// })
+
 	log.Println("0.0.0.0:1530-Listening...")
 
 	if err != nil {
@@ -32,11 +42,12 @@ func main() {
 	r.HandleFunc("/upload", uploadHandler).Methods("GET")
 	r.HandleFunc("/upload", doUploadHandler).Methods("POST")
 	r.HandleFunc("/public/", severHandler)
+	r.HandleFunc("/public/{.*}", severHandler)
 	r.HandleFunc("/notify", notify).Methods("GET")
 
 	srv := &http.Server{
         Handler:      r,
-        Addr:         "127.0.0.1:1530",
+        Addr:         "0.0.0.0:1530",
         // Good practice: enforce timeouts for servers you create!
         WriteTimeout: 15 * time.Second,
         ReadTimeout:  15 * time.Second,
