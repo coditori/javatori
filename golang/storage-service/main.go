@@ -7,26 +7,47 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
+	"github.com/gorilla/mux"
+	"github.com/sethvargo/go-password/password"
 )
+
+var authPass,err = password.Generate(32, 10, 10, false, false)
 
 const (
 	UPLOAD_DIR = "public"
-	USERNAME   = "admin"
-	PASSWORD   = "admin"
+	PUBLIC_URL = "/public/"
+	USERNAME   = "massoud"
 )
 
 func main() {
-	log.Println("0.0.0.0:8090-Listening...")
-	http.HandleFunc("/upload", uploadHandler)
-	http.HandleFunc("/do-upload", doUploadHandler)
-	http.HandleFunc("/public/", severHandler)
-	http.HandleFunc("/notify", notify)
-	http.ListenAndServe(":8090", nil)
+	log.Println("0.0.0.0:1530-Listening...")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Println("authPass", authPass)
+
+	r := mux.NewRouter()
+	r.HandleFunc("/upload", uploadHandler).Methods("GET")
+	r.HandleFunc("/upload", doUploadHandler).Methods("POST")
+	r.HandleFunc("/public/", severHandler)
+	r.HandleFunc("/notify", notify).Methods("GET")
+
+	srv := &http.Server{
+        Handler:      r,
+        Addr:         "127.0.0.1:1530",
+        // Good practice: enforce timeouts for servers you create!
+        WriteTimeout: 15 * time.Second,
+        ReadTimeout:  15 * time.Second,
+    }
+
+    log.Fatal(srv.ListenAndServe())
 }
 
 func uploadHandler(w http.ResponseWriter, r *http.Request) {
-	username, password, ok := r.BasicAuth()
-	if username == USERNAME && password == PASSWORD && ok {
+	username, pass, ok := r.BasicAuth()
+	if username == USERNAME && authPass == pass && ok {
 		t := template.New("uploadForm")                    // Create a template.
 		t, _ = template.ParseFiles("template/upload.html") // Parse template file.
 		t.Execute(w, nil)                                  // merge.
@@ -36,8 +57,8 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func doUploadHandler(w http.ResponseWriter, r *http.Request) {
-	username, password, ok := r.BasicAuth()
-	if r.Method == "POST" && username == USERNAME && password == PASSWORD && ok {
+	username, pass, ok := r.BasicAuth()
+	if r.Method == "POST" && username == USERNAME && authPass == pass && ok {
 		file, header, err := r.FormFile("file")
 		if err != nil {
 			fmt.Fprintln(w, err)
@@ -61,7 +82,7 @@ func doUploadHandler(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			fmt.Fprintln(w, err)
 		}
-		fmt.Fprintf(w, "File uploaded successfully : ")
+		http.Redirect(w, r, PUBLIC_URL, http.StatusTemporaryRedirect)
 		fmt.Fprintf(w, header.Filename)
 		return
 	}
@@ -69,6 +90,7 @@ func doUploadHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func severHandler(w http.ResponseWriter, r *http.Request) {
+	log.Println("request", r.URL.Path[1:])
 	//	username, password, ok := r.BasicAuth()
 	//	if username == USERNAME && password == PASSWORD && ok {
 	http.ServeFile(w, r, r.URL.Path[1:])
@@ -86,6 +108,6 @@ func returnAuth404(w http.ResponseWriter) http.ResponseWriter {
 }
 
 func notify(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("/notify check\n"))
-	println("/notifi is called")
+	w.Write([]byte("/notify"))
+	println("/notify is called")
 }
