@@ -11,7 +11,6 @@
     <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
     <spring-dans.version>0.0.1</spring-dans.version>
     <tomcat-dbcp.version>8.5.14</tomcat-dbcp.version>
-    <mysql-driver.version>6.0.6</mysql-driver.version>
     <cxf.version>3.1.11</cxf.version>
     <swagger-ui.version>3.0.7</swagger-ui.version>
     <jackson.version>2.8.8</jackson.version>
@@ -20,7 +19,7 @@
 
   <dependencies>
     <!-- spring dependencies -->
-    <dependency>
+    <dependency>from
       <groupId>com.massoudafrashteh.code.spring.dans</groupId>
       <artifactId>spring-dans</artifactId>
       <version>${spring-dans.version}</version>
@@ -45,7 +44,6 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>${mysql-driver.version}</version>
     </dependency>
     <!-- Apache CXF dependencies -->
     <dependency>
