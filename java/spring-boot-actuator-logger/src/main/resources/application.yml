@@ -1,0 +1,11 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  trace:
+    http:
+      include: RESPONSE_HEADERS
+  health:
+    enabled: true
+    show-details: always

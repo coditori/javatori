@@ -1,4 +1,4 @@
-package com.massoudafrashteh.code.spring.controller;
+package com.massoudafrashteh.code.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

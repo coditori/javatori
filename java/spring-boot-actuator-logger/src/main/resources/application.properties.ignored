@@ -1,6 +1,0 @@
-#logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter=DEBUG
-endpoints.trace.sensitive=false
-#management.security.enabled=false
-#logging.file=spl.log
-#spring.jackson.serialization.indent_output=true
-#logging.level.org.springframework.web=DEBUG
