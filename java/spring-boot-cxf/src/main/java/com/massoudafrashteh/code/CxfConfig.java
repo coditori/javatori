@@ -1,16 +1,18 @@
-package com.massoudafrashteh.code.starter;
+package com.massoudafrashteh.code;
 
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
-import com.massoudafrashteh.code.controller.UserController;
 import org.apache.cxf.Bus;
 import org.apache.cxf.endpoint.Server;
 import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
+import org.apache.cxf.jaxrs.lifecycle.SingletonResourceProvider;
 import org.apache.cxf.jaxrs.swagger.Swagger2Feature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 @Configuration
 public class CxfConfig {
@@ -24,8 +26,8 @@ public class CxfConfig {
         endpoint.setProvider(new JacksonJsonProvider());
         endpoint.setBus(bus);
         endpoint.setAddress("/");
-        endpoint.setServiceBeans(Arrays.<Object>asList(userController()));
-        endpoint.setFeatures(Arrays.asList(new Swagger2Feature()));
+        endpoint.setServiceBeans(Collections.singletonList(userController()));
+//        endpoint.setFeatures(List.of(new Swagger2Feature()));
         return endpoint.create();
     }
 
@@ -33,14 +35,4 @@ public class CxfConfig {
     public UserController userController() {
         return new UserController();
     }
-
-    //	 The default address of CXF RESTfull API is /services to change the API
-    // sub-directory from /services with /api or anything that you like
-//    @Bean
-//    public ServletRegistrationBean cxfServlet() {
-//        final ServletRegistrationBean servletRegistrationBean =
-//                new ServletRegistrationBean(new CXFServlet(), "/api/*");
-//        servletRegistrationBean.setLoadOnStartup(1);
-//        return servletRegistrationBean;
-//    }
 }

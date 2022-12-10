@@ -1,6 +1,5 @@
-package com.massoudafrashteh.code.repository;
+package com.massoudafrashteh.code;
 
-import com.massoudafrashteh.code.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

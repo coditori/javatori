@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.6'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.massoudafrashteh.code'
+version = '1.0-SNAPSHOT'
+description = 'spring-boot-cxf'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'com.h2database:h2'
+    implementation 'org.apache.cxf:cxf-spring-boot-starter-jaxrs:3.5.4'
+    implementation 'org.apache.cxf:cxf-rt-rs-service-description-swagger:3.5.4'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.14.1'
+    implementation 'org.webjars:swagger-ui:4.15.5'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

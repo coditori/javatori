@@ -1,41 +1,36 @@
-package com.massoudafrashteh.code.service.impl;
+package com.massoudafrashteh.code;
 
-import com.massoudafrashteh.code.domain.User;
-import com.massoudafrashteh.code.repository.UserRepository;
-import com.massoudafrashteh.code.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
-@Service
+@Component
 @Transactional
-public class UserServiceImpl implements UserService {
+@Configurable
+public class UserService {
 
     @Autowired
     private UserRepository userRepository;
 
-    @Override
     public Optional<User> save(final User user) {
         return Optional.of(userRepository.save(user));
     }
 
-    @Override
     public Optional<User> findById(final long id) {
-        return Optional.of(userRepository.findOne(id));
+        return userRepository.findById(id);
     }
 
-    @Override
     public Optional<List<User>> findAll() {
+        System.out.println("INSIDE find ALL");
         return Optional.of(userRepository.findAll());
     }
 
-    @Override
-    public Optional<User> update(final long id,
-                                 final User user) {
+    public Optional<User> update(final long id, final User user) {
 
         if (this.findById(id).isPresent()) {
             user.setId(id);
@@ -45,9 +40,7 @@ public class UserServiceImpl implements UserService {
         }
     }
 
-    @Override
     public void deleteById(final long id) {
-        System.out.println("delete by id " + id);
-        userRepository.delete(id);
+        userRepository.deleteById(id);
     }
 }

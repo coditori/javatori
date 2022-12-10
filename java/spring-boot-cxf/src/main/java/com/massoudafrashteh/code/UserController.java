@@ -1,20 +1,23 @@
-package com.massoudafrashteh.code.controller;
+package com.massoudafrashteh.code;
 
-import com.massoudafrashteh.code.domain.User;
-import com.massoudafrashteh.code.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
 import java.util.List;
 
-@Component
+
 @Path("/users")
-@Api(value = "/users") // Enables Swagger Documentation
 @Produces(MediaType.APPLICATION_JSON)
+@Api(value = "/users") // Enables Swagger Documentation
 public class UserController {
 
     @Autowired
@@ -23,7 +26,7 @@ public class UserController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public User save(final User user) {
-        return userService.save(user).get();
+        return userService.save(user).orElse(null);
     }
 
     @GET
@@ -36,7 +39,8 @@ public class UserController {
     @GET
     @ApiOperation(value = "Find all users", response = User.class)
     public List<User> findAll() {
-        return userService.findAll().get();
+        System.out.println("inside controller");
+        return userService.findAll().orElse(new ArrayList<>());
     }
 
     @PUT
