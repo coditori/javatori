@@ -39,12 +39,5 @@ These examples usually are a simple Enterprise combination of existing technolog
 <td><a href="/examples/hibernate">Hibernate</a></td>
 <td align="center">A bare Hibernate layer to work on just Data Access Layer (working on DB)</td>
 </tr>
-<tr>
-<td colspan="2"><strong>Go/Golang</strong></td>
-</tr>
-<tr>
-<td><a href="/golang/storage-service">Simple Storage Service</a></td>
-<td align="center">Simple Storage Service (File Service) with Basic Authentication</td>
-</tr>
 </tbody>
 </table>
