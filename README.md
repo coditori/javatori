@@ -1,4 +1,4 @@
-# Code Tutorials, Examples, and Best Practices.
+# Java Code Tutorials, Spring boot Integrations
 These examples usually are a simple Enterprise combination of existing technologies. The following sample applications are provided:
 <table>
 <thead>
