@@ -13,7 +13,7 @@
     <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
     <spring-dans.version>0.0.1</spring-dans.version>
     <swagger.version>2.7.0</swagger.version>
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
   </properties>
 
   <dependencies>
