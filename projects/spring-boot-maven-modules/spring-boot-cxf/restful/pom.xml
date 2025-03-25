@@ -8,7 +8,7 @@
   <artifactId>restful</artifactId>
 
   <properties>
-    <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
+    <spring-boot.version>2.5.12</spring-boot.version>
     <spring-dans.version>0.0.1</spring-dans.version>
     <tomcat-dbcp.version>8.5.14</tomcat-dbcp.version>
     <cxf.version>3.1.11</cxf.version>
